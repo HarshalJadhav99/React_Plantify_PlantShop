@@ -1,38 +1,404 @@
-.App {
-  text-align: center;
+.custom_nav {
+	background-color: #004f44;
+	padding-bottom: 120px !important;
+}
+.custom_nav .nav-item .nav-link {
+	color: aliceblue;
+}
+.active {
+	font-weight: 500;
+	color: aqua !important;
+}
+.hero_section {
+	background-color: #004f44;
+	padding-bottom: 90px;
+}
+.hero_left_content {
+	padding-top: 40px;
+}
+.hero_maintext {
+	font-family: "Chillax";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 72px;
+	margin-bottom: 30px;
+	/* or 112% */
+
+	letter-spacing: 1.5px;
+
+	color: #eff7f5;
+}
+.hero_para {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	/* or 175% */
+	margin-bottom: 30px;
+	letter-spacing: 0.3px;
+
+	color: #eff7f5;
+}
+.hero_btn .btn {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height */
+
+	letter-spacing: 0.2px;
+	padding: 20px 41px;
+	color: #004f44;
+	background: #eff7f5;
+	border-radius: 0px;
+}
+.hero_btn .btn:hover {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height */
+
+	letter-spacing: 0.2px;
+	padding: 20px 41px;
+	color: #eff7f5;
+	background: transparent;
+	border: 1px solid #eff7f5;
+	border-radius: 0px;
+}
+.hero_link {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.3px;
+	margin-left: 43px;
+	color: #eff7f5;
+	text-decoration: none;
+}
+.hero_link::after {
+	content: url("/public/assets/Arrow\ 1.svg");
+	margin-left: 8px;
+}
+.hero_link:hover {
+	color: #eff7f5;
+}
+.hero_banner_img {
+	position: relative;
+	z-index: 100px;
+}
+.top_img {
+	position: relative;
+	z-index: 100;
+}
+.hero_pattern {
+	position: absolute;
+	bottom: -31px;
+	left: -48px;
+	z-index: 50px;
+}
+.free_shipping_section {
+	margin-bottom: 129px;
+}
+.free_shipping_container {
+	position: relative;
+}
+.free_shipping_content {
+	padding: 58px 55px 0px;
+	position: absolute;
+	top: 0px;
+	left: 16px;
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 53px;
+	/* identical to box height */
+
+	letter-spacing: 0.3px;
+
+	color: #9c6955;
+}
+.free_p_text {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	margin-bottom: 62px;
+	color: #9c6955;
+}
+.free_bottom_text {
+	display: flex;
+	flex-direction: column;
+}
+.free_scontact {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.3px;
+	margin: 4px 0px;
+	color: #9c6955;
+	display: flex;
+}
+.free_scontact::before {
+	content: url("/public/assets/clarity_phone-handset-line.svg");
+	margin-right: 13px;
+}
+.free_semail::before {
+	content: url("/public/assets/clarity_email-line.svg");
+	margin-right: 13px;
+}
+.free_semail {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.3px;
+	margin: 4px 0px;
+	color: #9c6955;
+	display: flex;
+}
+.plant_map_section {
+	position: relative;
+	margin-bottom: 139px;
+}
+.map_info_box {
+	position: absolute;
+	min-width: 515px;
+	max-height: 231px;
+	margin: 28px;
+	top: 0;
+	background-color: white;
+	padding: 28px;
+}
+.map_info_box .btn {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 14px;
+	border-radius: 0px;
+	/* identical to box height */
+	background: #004f44;
+	letter-spacing: 1.3px;
+
+	color: #eff7f5;
+}
+.map_info_box .btn:hover {
+	color: #eff7f5;
+}
+.map_info_box .btn::before {
+	content: url("/public/assets/fluent_directions-16-regular.svg");
+	margin-right: 8px;
+}
+.info_head {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	letter-spacing: 0.3px;
+
+	color: #0a1e1b;
+	margin-bottom: 8px;
+}
+.info_body {
+	font-family: "Steppe";
+	max-width: 243px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	/* or 162% */
+
+	letter-spacing: 0.5px;
+
+	color: #666666;
+
+	margin-bottom: 8px;
+}
+.info_body_bottom {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	/* or 162% */
+
+	letter-spacing: 0.5px;
+
+	color: #666666;
+}
+.info_body_bottom span {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	/* identical to box height, or 162% */
+
+	letter-spacing: 0.5px;
+
+	color: #0a1e1b;
+}
+.search_space{
+	margin: 96px 0px;
+}
+.search_section {
+	/* border: 1px solid #004f44; */
+	background-color: #f3fffc;
+	padding: 85px 0px;
+	margin-bottom: 95px;
+}
+.search_input input {
+	/* width: 1010px; */
+	min-height: 59px;
+}
+.search_lbtn {
+	display: flex;
+	border: 1px solid #004f44;
+	margin-right: 15px;
+}
+.search_rbtn {
+	display: flex;
+	padding: 6px;
+	background-color: #004f44;
+	border: 1px solid #004f44;
+	margin-left: 15px;
+}
+.color_space {
+	margin-bottom: 67px;
+}
+.arrivals_head {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	/* identical to box height */
+
+	letter-spacing: 0.3px;
+
+	color: #004f44;
+}
+.arrivals_head_right a {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	float: right;
+	color: #004f44;
+}
+.arrivals_head_right a:hover {
+	color: #004f44;
+}
+.card_img_overlay {
+	position: relative;
+	width: 50%;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 11px;
+	right: 0;
+	height: 100%;
+	width: 92%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background: rgba(1, 44, 38, 0.71);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card_img_overlay:hover .overlay {
+	opacity: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+	width: 100%;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
+.text_hover {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 29px;
+	line-height: 35px;
+	/* identical to box height */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	letter-spacing: 0.3px;
+display: block;
+	color: #ffffff;
 }
-
-.App-link {
-  color: #61dafb;
+.text_hover_a a {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.3px;
+	text-decoration: none;
+	color: #ffffff;
+	/* display: flex; */
 }
+.text_hover_a a::after{
+	content: url('/public/assets/Arrow\ 2.svg');
+}
+.text_hover_a a:hover {
+	color: #ffffff;
+}
+.plant_stand_section{
+	background: #F3FFFC;
+	padding: 80px 0px;
+	margin-bottom: 95px;
+}
+.plant_stands_head h3{
+	font-family: 'Steppe';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+padding-left: 20px;
+/* identical to box height, or 135% */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+letter-spacing: 0.5px;
+margin-bottom: 30px;
+color: #004F44;
+}
+.slick-prev{
+	display: none !important;
+}
+.slick-next {
+    right: 4px !important;
+}
+.slick-next:before {
+    content: url('/public/assets/Group\ 15.svg') !important;
 }
