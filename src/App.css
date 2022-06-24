@@ -257,7 +257,7 @@
 
 	color: #0a1e1b;
 }
-.search_space{
+.search_space {
 	margin: 96px 0px;
 }
 .search_section {
@@ -355,7 +355,7 @@
 	/* identical to box height */
 
 	letter-spacing: 0.3px;
-display: block;
+	display: block;
 	color: #ffffff;
 }
 .text_hover_a a {
@@ -369,36 +369,159 @@ display: block;
 	color: #ffffff;
 	/* display: flex; */
 }
-.text_hover_a a::after{
-	content: url('/public/assets/Arrow\ 2.svg');
+.text_hover_a a::after {
+	content: url("/public/assets/Arrow\ 2.svg");
 }
 .text_hover_a a:hover {
 	color: #ffffff;
 }
-.plant_stand_section{
-	background: #F3FFFC;
+.plant_stand_section {
+	background: #f3fffc;
 	padding: 80px 0px;
 	margin-bottom: 95px;
 }
-.plant_stands_head h3{
-	font-family: 'Steppe';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 54px;
-padding-left: 20px;
-/* identical to box height, or 135% */
+.plant_stands_head h3 {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 54px;
+	padding-left: 20px;
+	/* identical to box height, or 135% */
 
-letter-spacing: 0.5px;
-margin-bottom: 30px;
-color: #004F44;
+	letter-spacing: 0.5px;
+	margin-bottom: 30px;
+	color: #004f44;
 }
-.slick-prev{
+.plant_stand_section .slick-prev {
 	display: none !important;
 }
-.slick-next {
-    right: 4px !important;
+.plant_stand_section .slick-next {
+	right: 4px !important;
 }
-.slick-next:before {
-    content: url('/public/assets/Group\ 15.svg') !important;
+.plant_stand_section .slick-next:before {
+	content: url("/public/assets/Group\ 15.svg") !important;
+}
+.featured_section {
+	margin: 70px 0px 97px 0px;
+}
+.featured_header {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	/* identical to box height */
+
+	letter-spacing: 0.5px;
+	margin-bottom: 48px;
+	color: #004f44;
+}
+.featured_header_link a {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	color: #004f44;
+	float: right;
+}
+
+.featured_header_link a:hover {
+	color: #004f44;
+}
+.card_space{
+	padding: 0px 30px 0px 0px;
+}
+.fe_card_img {
+	margin-bottom: 20px;
+}
+.fe_card_title {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	/* identical to box height */
+
+	letter-spacing: 0.3px;
+
+	color: #004f44;
+	margin-bottom: 28px;
+}
+.fe_card_select_color {
+	display: flex;
+	flex-direction: column;
+}
+.fe_card_select_color_text {
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 8px;
+	color: #9ea9a7;
+}
+.color_circle_1 {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	margin-right: 4px;
+	background: #39362e;
+}
+.color_circle_2 {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	margin-right: 4px;
+	background: #f3a195;
+}
+.color_circle_3 {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	margin-right: 4px;
+	background: #efeae6;
+}
+.color_circle_4 {
+	width: 16px;
+	height: 16px;
+	border-radius: 100%;
+	margin-right: 4px;
+	background: #c38364;
+}
+.fe_card_buy_btn button {
+	background: #004f44;
+	border-radius: 0;
+	font-family: "Steppe";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #ffffff;
+	padding: 8px 24px;
+}
+.fe_card_buy_btn button:hover {
+	color: #004f44;
+	background: transparent;
+	border: 1px solid #004f44;
+}
+.featured_section .slick-next{
+	width: 56px;
+	height: 56px;
+	border-radius: 100%;
+	background-color: white;
+}
+
+.featured_section .slick-next:before{
+	content: url(/public/assets/clarity_arrow-line.svg);
+
+}
+.featured_section .slick-next:hover{
+	background-color: white;
 }

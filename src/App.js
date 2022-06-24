@@ -15,6 +15,7 @@ import FreeShipping from './pages/FreeShipping';
 import Map from './pages/Map';
 import Search from './pages/Search';
 import PlantStands from './pages/PlantStands';
+import Featured from './pages/Featured';
 function App() {
   return (
     <div className="App">
@@ -26,6 +27,7 @@ function App() {
         <Route path='fertilizer' element={<Fertilizer/>}/>
       </Routes> */}
       <HeroBanner/>
+      <Featured/>
       <Search/>
       <PlantStands/>
       <FreeShipping/>
