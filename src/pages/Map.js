@@ -18,7 +18,9 @@ const Map = () => {
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-12">
+							<div className="point_map">
 								<img className="img-fluid" src={group33} />
+								</div>
 								<div className="map_info_box d-none d-lg-block">
                                 <button className="btn d-flex">GET DIRECTIONS</button>
 									<h6 className="info_head">Visit us</h6>

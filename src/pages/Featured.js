@@ -25,7 +25,7 @@ const settings = {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -55,12 +55,12 @@ const Featured = () => {
 				<div>
 					<div className="container">
 						<div className="row">
-							<div className="col-lg-6">
+							<div className="col-6 col-lg-6">
 								<div className="featured_header">
 									<span >Featured</span>
 								</div>
 							</div>
-							<div className="col-lg-6">
+							<div className="col-6 col-lg-6">
 								<div className="featured_header_link">
 									<a href="" blanck="">
 										view all

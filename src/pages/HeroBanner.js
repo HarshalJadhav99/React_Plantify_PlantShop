@@ -25,8 +25,8 @@ const HeroBanner = () => {
 							<div className="col-lg-6">
 								<div className="hero_left_content">
                                     <h1 className="hero_maintext" data-aos="{fade-up}">Happiness blooms from within</h1>
-                                    <p className="hero_para" data-aos={"fade-up"}  data-aos-duration="3000">Our environment, the world in which we live and work, is a mirror of our attitudes and expectations.</p>
-                                <div className="hero_btn" data-aos={"fade-up"}  data-aos-duration="3000">
+                                    <p className="hero_para" data-aos={"fade-up"}  data-aos-duration="1000">Our environment, the world in which we live and work, is a mirror of our attitudes and expectations.</p>
+                                <div className="hero_btn" data-aos={"fade-up"}  data-aos-duration="4000">
                                     <button className="btn"> Shop now</button>
                                     <span><a className="hero_link" href="" blanck="">Explore plants</a></span>
                                     </div>

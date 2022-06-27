@@ -30,7 +30,7 @@ const Search = () => {
 												<img src={group35} />
 											</button>
 										</div>
-										<div className="col-auto col-lg-10 px-0 search_input">
+										<div className="col-auto col-md-8 col-lg-10 px-0 search_input">
 											<input
 												type="search"
 												class="form-control "
