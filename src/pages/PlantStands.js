@@ -1,4 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
+import image5 from "../pages/assets/image 5.svg";
+import image6 from "../pages/assets/image 6.svg";
+import image7 from "../pages/assets/image 7.svg";
+import Aos from 'aos';
+
+
 import Slider from "react-slick";
 const settings = {
 	dots: false,
@@ -34,9 +40,15 @@ const settings = {
       ],
 };
 const PlantStands = () => {
+	Aos.init();
+	// useEffect(() => {
+	// 	Aos.init({ duration: 4000 });
+	// }, []);
 	return (
 		<>
-			<section className="plant_stand_section">
+			<section className="plant_stand_section" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
 				<div>
 					<div className="container">
 						<div className="row">
@@ -50,22 +62,22 @@ const PlantStands = () => {
 							<Slider {...settings}>
 								<div className="col-lg-12 px-4 py-0">
 									<div>
-										<img className="img-fluid" src="../assets/image 5.svg" />
+										<img className="img-fluid img_hover" src={image5} />
 									</div>
 								</div>
 								<div className="col-lg-12 px-4">
 									<div>
-										<img className="img-fluid" src="../assets/image 6.svg" />
+										<img className="img-fluid img_hover" src={image6} />
 									</div>
 								</div>
 								<div className="col-lg-4 px-4">
 									<div>
-										<img className="img-fluid" src="../assets/image 7.svg" />
+										<img className="img-fluid img_hover" src={image7}/>
 									</div>
 								</div>
 								<div className="col-lg-12 px-4">
 									<div>
-										<img className="img-fluid" src="../assets/image 5.svg" />
+										<img className="img-fluid img_hover" src={image5} />
 									</div>
 								</div>
 							</Slider>

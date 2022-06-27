@@ -1,15 +1,25 @@
-import React from "react";
+import React,{useEffect} from "react";
+import group33 from "../pages/assets/Group 33.svg";
+import Aos from 'aos';
+
 
 const Map = () => {
+	Aos.init();
+
+	// useEffect(() => {
+	// 	Aos.init({ duration: 4000 });
+	// }, []);
 	return (
 		<>
-			<section className="plant_map_section">
+			<section className="plant_map_section" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
 				<div>
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-12">
-								<img className="img-fluid" src="../assets/Group 33.svg" />
-								<div className="map_info_box">
+								<img className="img-fluid" src={group33} />
+								<div className="map_info_box d-none d-lg-block">
                                 <button className="btn d-flex">GET DIRECTIONS</button>
 									<h6 className="info_head">Visit us</h6>
 									<div className="info_body">

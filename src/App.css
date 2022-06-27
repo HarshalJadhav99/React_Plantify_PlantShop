@@ -5,6 +5,9 @@
 .custom_nav .nav-item .nav-link {
 	color: aliceblue;
 }
+.slick-dots{
+	bottom: -40px !important;
+}
 .active {
 	font-weight: 500;
 	color: aqua !important;
@@ -80,13 +83,16 @@
 	margin-left: 43px;
 	color: #eff7f5;
 	text-decoration: none;
+	margin-left: 5%;
+    transition: 1s;
 }
 .hero_link::after {
-	content: url("/public/assets/Arrow\ 1.svg");
+	content: url("../src/pages/assets/Arrow 1.svg");
 	margin-left: 8px;
 }
 .hero_link:hover {
 	color: #eff7f5;
+	margin-left: 10%;
 }
 .hero_banner_img {
 	position: relative;
@@ -148,13 +154,17 @@
 	margin: 4px 0px;
 	color: #9c6955;
 	display: flex;
+	text-decoration: none;
+}
+.free_scontact:hover{
+	color: #9c6955;
 }
 .free_scontact::before {
-	content: url("/public/assets/clarity_phone-handset-line.svg");
+	content: url("../src/pages/assets/clarity_phone-handset-line.svg");
 	margin-right: 13px;
 }
 .free_semail::before {
-	content: url("/public/assets/clarity_email-line.svg");
+	content: url("../src/pages/assets/clarity_email-line.svg");
 	margin-right: 13px;
 }
 .free_semail {
@@ -167,6 +177,10 @@
 	margin: 4px 0px;
 	color: #9c6955;
 	display: flex;
+	text-decoration: none;
+}
+.free_semail:hover{
+	color: #9c6955;
 }
 .plant_map_section {
 	position: relative;
@@ -202,7 +216,7 @@
 	color: #eff7f5;
 }
 .map_info_box .btn::before {
-	content: url("/public/assets/fluent_directions-16-regular.svg");
+	content: url("../src/pages/assets/fluent_directions-16-regular.svg");
 	margin-right: 8px;
 }
 .info_head {
@@ -316,6 +330,7 @@
 .card_img_overlay {
 	position: relative;
 	width: 50%;
+	cursor: pointer;
 }
 .overlay {
 	position: absolute;
@@ -370,7 +385,7 @@
 	/* display: flex; */
 }
 .text_hover_a a::after {
-	content: url("/public/assets/Arrow\ 2.svg");
+	content: url("../src/pages/assets/Arrow\ 2.svg");
 }
 .text_hover_a a:hover {
 	color: #ffffff;
@@ -393,6 +408,16 @@
 	margin-bottom: 30px;
 	color: #004f44;
 }
+.img_hover{
+	position: relative;
+	top: 0px;
+}
+.img_hover:hover{
+	transition: all 0.2s ease-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	top: -4px;
+    /* border: 1px solid #cccccc; */
+}
 .plant_stand_section .slick-prev {
 	display: none !important;
 }
@@ -400,7 +425,7 @@
 	right: 4px !important;
 }
 .plant_stand_section .slick-next:before {
-	content: url("/public/assets/Group\ 15.svg") !important;
+	content: url("../src/pages/assets/Group\ 15.svg") !important;
 }
 .featured_section {
 	margin: 70px 0px 97px 0px;
@@ -519,9 +544,140 @@
 }
 
 .featured_section .slick-next:before{
-	content: url(/public/assets/clarity_arrow-line.svg);
+	content: url(../src/pages/assets//clarity_arrow-line.svg);
 
 }
 .featured_section .slick-next:hover{
 	background-color: white;
 }
+.bottom_img_overlay{
+	width: 100%;
+}
+.animated-icon3 {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon3 span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon3 span {
+    background: #00ffbb;
+}
+
+.animated-icon3 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none !important;
+}
+@media (max-width: 575.98px) { 
+	.custom_nav{
+		padding-bottom: 10px !important;
+	}
+	.bottom_img_overlay{
+		margin-bottom: 10px;
+	}
+	.color_space {
+		margin-bottom: 10px;
+	}
+	.arrivals_head{
+		font-size: 24px;
+	}
+	.featured_section .slick-next{
+		width: 40px;
+		height: 40px;
+	}
+	.slick-next{
+		margin-right: 11px;
+	}
+	.slick-next{
+		right: -4px !important;
+	}
+	.plant_stand_section .slick-next{
+		margin-right: 65px !important;
+	}
+	.free_shipping_content{
+		padding: 0;
+	}
+	.free_p_text{
+		margin-bottom: auto;
+	}
+	.free_bottom_text{
+		margin-top: 10px;
+		margin-right: 30px;
+display: flex;
+flex-direction: row;
+	}
+ }
